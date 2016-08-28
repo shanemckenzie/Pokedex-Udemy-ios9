@@ -213,7 +213,7 @@
                                     <constraint firstAttribute="height" constant="55" id="tKG-VO-kMJ"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SL0-on-i2H">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SL0-on-i2H">
                                 <rect key="frame" x="20" y="74" width="560" height="5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="pkR-0T-7QK">
@@ -370,6 +370,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Evolution: Venosaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FD-LH-NQL">
                                         <rect key="frame" x="159" y="2" width="283" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="283" id="qGW-Pa-lEw"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -379,6 +382,7 @@
                                 <constraints>
                                     <constraint firstItem="9FD-LH-NQL" firstAttribute="centerY" secondItem="zyH-H1-3ey" secondAttribute="centerY" id="Dv3-Qe-yVy"/>
                                     <constraint firstItem="9FD-LH-NQL" firstAttribute="centerX" secondItem="zyH-H1-3ey" secondAttribute="centerX" id="aF6-98-MbV"/>
+                                    <constraint firstItem="9FD-LH-NQL" firstAttribute="top" secondItem="zyH-H1-3ey" secondAttribute="top" constant="2" id="qvC-ft-Dk1"/>
                                     <constraint firstAttribute="height" constant="26" id="vAL-QE-M4v"/>
                                 </constraints>
                             </view>
@@ -387,6 +391,9 @@
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="116" translatesAutoresizingMaskIntoConstraints="NO" id="wxe-L5-c99">
                                 <rect key="frame" x="160" y="240" width="280" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="gTc-E6-ktg"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="117" translatesAutoresizingMaskIntoConstraints="NO" id="XnM-d5-sXn">
                                 <rect key="frame" x="160" y="240" width="280" height="120"/>
@@ -404,9 +411,15 @@
                             <constraint firstItem="zyH-H1-3ey" firstAttribute="top" secondItem="SL0-on-i2H" secondAttribute="bottom" id="YOh-sU-z2f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gEp-oc-ojh" secondAttribute="trailing" id="ZWb-H8-MCk"/>
                             <constraint firstItem="gEp-oc-ojh" firstAttribute="leading" secondItem="eB7-hh-g52" secondAttribute="leadingMargin" id="abD-lO-NIF"/>
+                            <constraint firstItem="zyH-H1-3ey" firstAttribute="centerX" secondItem="wxe-L5-c99" secondAttribute="centerX" id="b4J-D5-kwD"/>
                             <constraint firstAttribute="trailing" secondItem="zyH-H1-3ey" secondAttribute="trailing" id="fIO-xy-euh"/>
+                            <constraint firstItem="wxe-L5-c99" firstAttribute="top" secondItem="XnM-d5-sXn" secondAttribute="top" id="guC-zI-ZVI"/>
                             <constraint firstItem="zyH-H1-3ey" firstAttribute="leading" secondItem="eB7-hh-g52" secondAttribute="leading" id="nRE-8z-ukv"/>
                             <constraint firstItem="gEp-oc-ojh" firstAttribute="top" secondItem="zyH-H1-3ey" secondAttribute="bottom" constant="8" id="ssH-x2-Nnm"/>
+                            <constraint firstItem="wxe-L5-c99" firstAttribute="leading" secondItem="XnM-d5-sXn" secondAttribute="leading" id="u8K-1t-i1T"/>
+                            <constraint firstItem="zyH-H1-3ey" firstAttribute="centerX" secondItem="XnM-d5-sXn" secondAttribute="centerX" id="uSM-00-doy"/>
+                            <constraint firstItem="zyH-H1-3ey" firstAttribute="top" secondItem="XnM-d5-sXn" secondAttribute="bottom" constant="78" id="xib-hb-xY2"/>
+                            <constraint firstItem="zyH-H1-3ey" firstAttribute="top" secondItem="eB7-hh-g52" secondAttribute="top" constant="438" id="z2v-pT-yVx"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
