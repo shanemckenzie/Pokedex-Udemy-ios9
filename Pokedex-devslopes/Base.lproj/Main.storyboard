@@ -190,6 +190,9 @@
                                             <constraint firstAttribute="height" constant="26" id="ytE-Bc-1di"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="9Wo-DN-hH6" eventType="touchUpInside" id="kCb-xK-xzP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -389,7 +392,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="baseAttLbl" destination="0pt-04-Hj9" id="Qvk-LY-R6V"/>
+                        <outlet property="currentEvoImg" destination="uV2-Y4-mbc" id="QGI-l3-XNj"/>
+                        <outlet property="defenseLbl" destination="6gb-hR-TDj" id="Zot-4c-Kua"/>
+                        <outlet property="descLbl" destination="xP7-ZK-1Gu" id="iG5-pH-Ssk"/>
+                        <outlet property="evoLbl" destination="0Cm-Z5-riJ" id="nAq-4e-kFw"/>
+                        <outlet property="heightLbl" destination="Q2H-nO-UE7" id="IMk-7C-chO"/>
+                        <outlet property="mainImg" destination="xP7-ZK-1Gu" id="pxm-wc-4bd"/>
                         <outlet property="nameLbl" destination="Z2R-NS-R39" id="LMv-0O-Ncb"/>
+                        <outlet property="nextEvoImg" destination="tKK-UU-sHm" id="ABf-5H-xQe"/>
+                        <outlet property="pokeIdLbl" destination="T0y-K1-lbn" id="nXe-uv-5kL"/>
+                        <outlet property="typeLbl" destination="35y-ot-UQ1" id="hcL-cR-tKT"/>
+                        <outlet property="weightLbl" destination="t2l-a6-Auh" id="7l9-s3-M7X"/>
                     </connections>
                 </viewController>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4G-2P-z6e">
