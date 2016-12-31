@@ -64,10 +64,6 @@ class PokemonDetailVC: UIViewController {
             
             evoLbl.text = str
         }
-        
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
