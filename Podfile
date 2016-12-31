@@ -6,6 +6,10 @@ target 'Pokedex-devslopes' do
   use_frameworks!
 
   # Pods for Pokedex-devslopes
-  pod 'Alamofire', '~> 3.4'
+  source 'https://github.com/CocoaPods/Specs.git'
+  platform :ios, '10.0'
+  use_frameworks!
+  pod ‘Alamofire’, '~> 4.0'
+
 
 end
